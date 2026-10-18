@@ -1,0 +1,6 @@
+SiteCode|Site|PaysCode|Pays|DepartementCode|Departement|CodePostal|Ville
+D001|Siège social|FR|France|13|Bouches-du-Rhône|13001|Marseille
+D002|Agence Sud|FR|France|69|Rhône|69001|Lyon
+D003|Agence Ouest|FR|France|75|Paris|75001|Paris
+D004|Agence Europe Sud|FR|France|33|Gironde|33001|Bordeaux
+D005|Agence Europe Est|FR|France|59|Nord|59001|Lille

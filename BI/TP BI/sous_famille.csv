@@ -1,0 +1,21 @@
+﻿SousFamille_ID;Nom;Code;Description;Famille_ID
+1;Lave-Linge;LL;NULL;1
+2;Lave-Vaisselle;LV;NULL;1
+3;Seche-Linge;SL;NULL;1
+4;Four;F;NULL;1
+5;Refrégirateur;R;NULL;1
+6;Grille-Pain;GP;NULL;2
+7;Cafetière;C;NULL;2
+8;Robot Cuisine;RC;NULL;2
+9;Hotte aspirante;C;NULL;2
+10;Aspirateur;A;NULL;2
+1;Lave-Linge;LL;NULL;1
+2;Lave-Vaisselle;LV;NULL;1
+3;Seche-Linge;SL;NULL;1
+4;Four;F;NULL;1
+5;Refrégirateur;R;NULL;1
+6;Grille-Pain;GP;NULL;2
+7;Cafetière;C;NULL;2
+8;Robot Cuisine;RC;NULL;2
+9;Hotte aspirante;C;NULL;2
+10;Aspirateur;A;NULL;2

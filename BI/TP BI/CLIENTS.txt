@@ -1,0 +1,11 @@
+ClientCode	Client	TypeClient	SegmentationClient	PaysCode	Pays	DepartementCode	Departement	CodePostal	Ville
+C1	LaBoutiqueOnLine.com	Site Marchand	Bon Client	FR	France	13	Bouches-du-Rhône	13001	Marseille
+C2	Maison Discount	Discounteur	Bon Client	FR	France	75	Paris	75001	Paris
+C3	Cuisine du sud	Spécialiste	Tiède	FR	France	13	Bouches-du-Rhône	13100	Aix-en-Provence
+C4	Discount plus	Discounteur	Tiède	FR	France	33	Gironde	33001	Bordeaux
+C5	EquiperSaMaison.com	Site Marchand	Très Bon Client	FR	France	69	Rhône	69001	Lyon
+C6	Hypermarché Youpi	Grande surface	Très Bon Client	FR	France	75	Paris	75001	Paris
+C7	EineKüche	Spécialiste	Bon Client	DE	Allemagne	091	Haute-Bavière	58352	Munich
+C8	Mercado Del Sol	Grande surface	Bon Client	ES	Espagne	08	Catalogne	08006	Barcelone
+C9	ElectroYoupa	Spécialiste	Bon Client	FR	France	13	Bouches-du-Rhône	13001	Marseille
+C10	Toutmoinscher.com	Site Marchand	Tiède	FR	France	59	Nord	59001	Lille
