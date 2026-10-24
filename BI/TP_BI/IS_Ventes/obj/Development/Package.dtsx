@@ -1,0 +1,1130 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/23/2026 11:20:17 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ORCA"
+  DTS:CreatorName="ORCA\WinUser"
+  DTS:DTSID="{15B03068-5ABA-45F5-9BF7-A3EF2AF66EC9}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="1036"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{6E211E91-3715-4111-96A6-1032DEE7F04D}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{11C66E40-9872-40CD-BE93-F337EA6B838B}"
+      DTS:ObjectName="Gestionnaire de connexions de fichiers plats">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\LAB\ISID2\MISID2_26-27_WS-DE\BI\TP_BI\dates_values.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date_PK"
+              DTS:DTSID="{48559FBA-E7E2-4C57-B92C-DF5C24FE64A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{98A3BCC2-F3F5-4FD9-ABDC-634A7BC3B1CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Jour_Moi_Annee"
+              DTS:DTSID="{31F07245-090D-4400-8875-7651DA6820DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Annee"
+              DTS:DTSID="{02EA8450-99DA-4E42-BF98-BC67C6E84233}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID_Semestre"
+              DTS:DTSID="{71018B16-BA93-402D-9C2D-03E78AB32F8D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Semestre"
+              DTS:DTSID="{2001F8FF-593B-46A2-91BF-216CE93811DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID_Trimestre"
+              DTS:DTSID="{210A1948-CB3B-4E79-96E6-BCB735AD5BC0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Trimestre"
+              DTS:DTSID="{0CA7C8B4-4374-480C-9BD5-0980680F334F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID_Mois"
+              DTS:DTSID="{15D1DB44-301F-4C88-968E-C40057EA980A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mois"
+              DTS:DTSID="{8277672D-9493-4ADF-957E-A968F097DB14}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lib_Mois"
+              DTS:DTSID="{E650852D-1D47-4347-854B-AE6D123354CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Jour"
+              DTS:DTSID="{CBA5E4C5-2AC0-4811-8538-821801CE4944}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Id_Lib_Jour"
+              DTS:DTSID="{3E4DE7E0-369F-416A-A64A-AE54D8B02C48}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lib_Jour"
+              DTS:DTSID="{E97D1DDD-7B3D-49D6-9D21-2863AC464AC8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Semaine"
+              DTS:DTSID="{1133E0F4-840D-46B2-A6EE-0AF174E8ABE9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JourDeAnnee"
+              DTS:DTSID="{8D4816B8-2398-4ED0-928C-8311D24E880F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Jour_mois_lettre"
+              DTS:DTSID="{C6563837-4693-42E3-8FD7-06EDDDA38B6F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ORCA\SQLEXPRESS.DW_VENTES]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{9E7B4BDF-55C6-4A1E-9089-239B0F2DE7C1}"
+      DTS:ObjectName="ORCA\SQLEXPRESS.DW_VENTES">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=ORCA\SQLEXPRESS;Initial Catalog=DW_VENTES;Integrated Security=True;Encrypt=False;Application Name=SSIS-Package-{9E7B4BDF-55C6-4A1E-9089-239B0F2DE7C1}ORCA\SQLEXPRESS.DW_VENTES;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Flux date"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{5BFB5C7E-6FC5-474A-80F7-63F6D98D8248}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Flux date"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Flux date\Destination ADO NET"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Charge des données dans une base de données compatible ADO.NET qui utilise une vue ou une table de base de données. Chargez les données dans une table nouvelle ou existante. Par exemple, utilisez un fournisseur ADO.NET pour ODBC pour charger des données dans une destination ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;2"
+              description="Charge des données dans une base de données compatible ADO.NET qui utilise une vue ou une table de base de données. Chargez les données dans une table nouvelle ou existante. Par exemple, utilisez un fournisseur ADO.NET pour ODBC pour charger des données dans une destination ODBC."
+              name="Destination ADO NET"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nom de la table de base de données de destination."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."DimDates"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifiez le nombre de lignes par lot. La taille par défaut, 0, utilise la même taille que la mémoire tampon interne SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant qu'une commande n'expire. Une valeur égale à 0 indique un délai infini. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si l'interface SqlBulkCopy doit être utilisée pour améliorer les performances des opérations d'insertion en bloc. Cette interface n'est prise en charge que par certains fournisseurs."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Flux date\Destination ADO NET.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ORCA\SQLEXPRESS.DW_VENTES]"
+                  connectionManagerRefId="Package.ConnectionManagers[ORCA\SQLEXPRESS.DW_VENTES]"
+                  description="Gestionnaire de connexions managées"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Date_PK]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Date_PK"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Date_PK]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Date_PK]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Date]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Date]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Jour_Moi_Annee]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Jour_Moi_Annee"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Jour_Moi_Annee]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Jour_Moi_Annee]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Annee]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Annee"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Annee]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Annee]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[ID_Semestre]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ID_Semestre"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[ID_Semestre]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ID_Semestre]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Semestre]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Semestre"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Semestre]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Semestre]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[ID_Trimestre]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ID_Trimestre"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[ID_Trimestre]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ID_Trimestre]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Trimestre]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Trimestre"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Trimestre]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Trimestre]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[ID_Mois]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ID_Mois"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[ID_Mois]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ID_Mois]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Mois]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mois"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Mois]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Mois]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Lib_Mois]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Lib_Mois"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Lib_Mois]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Lib_Mois]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Jour]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Jour"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Jour]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Jour]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Id_Lib_Jour]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Id_Lib_Jour"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Id_Lib_Jour]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Id_Lib_Jour]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Lib_Jour]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Lib_Jour"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Lib_Jour]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Lib_Jour]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Semaine]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Semaine"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Semaine]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Semaine]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[JourDeAnnee]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="JourDeAnnee"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[JourDeAnnee]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[JourDeAnnee]" />
+                    <inputColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].Columns[Jour_mois_lettre]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Jour_mois_lettre"
+                      externalMetadataColumnId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Jour_mois_lettre]"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Jour_mois_lettre]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Date_PK]"
+                      dataType="i4"
+                      name="Date_PK" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Date]"
+                      dataType="dbTimeStamp"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Jour_Moi_Annee]"
+                      dataType="wstr"
+                      length="76"
+                      name="Jour_Moi_Annee" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Annee]"
+                      dataType="i4"
+                      name="Annee" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[ID_Semestre]"
+                      dataType="wstr"
+                      length="25"
+                      name="ID_Semestre" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Semestre]"
+                      dataType="wstr"
+                      length="20"
+                      name="Semestre" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[ID_Trimestre]"
+                      dataType="wstr"
+                      length="26"
+                      name="ID_Trimestre" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Trimestre]"
+                      dataType="wstr"
+                      length="21"
+                      name="Trimestre" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[ID_Mois]"
+                      dataType="i4"
+                      name="ID_Mois" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Mois]"
+                      dataType="i4"
+                      name="Mois" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Lib_Mois]"
+                      dataType="wstr"
+                      length="30"
+                      name="Lib_Mois" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Jour]"
+                      dataType="i4"
+                      name="Jour" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Id_Lib_Jour]"
+                      dataType="i4"
+                      name="Id_Lib_Jour" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Lib_Jour]"
+                      dataType="wstr"
+                      length="10"
+                      name="Lib_Jour" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Semaine]"
+                      dataType="i4"
+                      name="Semaine" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[JourDeAnnee]"
+                      dataType="i4"
+                      name="JourDeAnnee" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET].ExternalColumns[Jour_mois_lettre]"
+                      dataType="wstr"
+                      length="56"
+                      name="Jour_mois_lettre" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Flux date\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination ADO NET"
+                  synchronousInputId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Flux date\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Flux date\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Flux date\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Flux date\Destination ADO NET.Outputs[Sortie d'erreur de destination ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Flux date\Source du fichier plat"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+              description="Source du fichier plat"
+              localeId="1036"
+              name="Source du fichier plat"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Flux date\Source du fichier plat.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+                  connectionManagerRefId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat]"
+                  name="Sortie de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Date_PK]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Date_PK]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Date_PK]"
+                      name="Date_PK"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Date]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Date]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Jour_Moi_Annee]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Jour_Moi_Annee]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Jour_Moi_Annee]"
+                      name="Jour_Moi_Annee"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Annee]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Annee]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Annee]"
+                      name="Annee"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ID_Semestre]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ID_Semestre]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ID_Semestre]"
+                      name="ID_Semestre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Semestre]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Semestre]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Semestre]"
+                      name="Semestre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ID_Trimestre]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ID_Trimestre]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ID_Trimestre]"
+                      name="ID_Trimestre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Trimestre]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Trimestre]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Trimestre]"
+                      name="Trimestre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ID_Mois]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ID_Mois]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ID_Mois]"
+                      name="ID_Mois"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Mois]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Mois]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Mois]"
+                      name="Mois"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Lib_Mois]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Lib_Mois]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Lib_Mois]"
+                      name="Lib_Mois"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Jour]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Jour]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Jour]"
+                      name="Jour"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Id_Lib_Jour]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Id_Lib_Jour]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Id_Lib_Jour]"
+                      name="Id_Lib_Jour"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Lib_Jour]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Lib_Jour]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Lib_Jour]"
+                      name="Lib_Jour"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Semaine]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Semaine]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Semaine]"
+                      name="Semaine"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[JourDeAnnee]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[JourDeAnnee]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[JourDeAnnee]"
+                      name="JourDeAnnee"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Jour_mois_lettre]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Jour_mois_lettre]"
+                      length="50"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Jour_mois_lettre]"
+                      name="Jour_mois_lettre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Date_PK]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Date_PK" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Date]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Jour_Moi_Annee]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Jour_Moi_Annee" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Annee]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Annee" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ID_Semestre]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="ID_Semestre" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Semestre]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Semestre" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ID_Trimestre]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="ID_Trimestre" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Trimestre]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Trimestre" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ID_Mois]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="ID_Mois" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Mois]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Mois" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Lib_Mois]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Lib_Mois" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Jour]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Jour" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Id_Lib_Jour]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Id_Lib_Jour" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Lib_Jour]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Lib_Jour" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Semaine]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Semaine" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[JourDeAnnee]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="JourDeAnnee" />
+                    <externalMetadataColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Jour_mois_lettre]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Jour_mois_lettre" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Flux date\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Colonne de sortie d'erreur de source de fichier plat"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      name="Colonne de sortie d'erreur de source de fichier plat" />
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Flux date\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Flux date\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Flux date.Paths[Sortie de source de fichier plat]"
+              endId="Package\Flux date\Destination ADO NET.Inputs[Entrée de destination ADO NET]"
+              name="Sortie de source de fichier plat"
+              startId="Package\Flux date\Source du fichier plat.Outputs[Sortie de source de fichier plat]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Cette section CDATA contient des informations sur la disposition du package. Elle comprend des informations telles que les coordonnées (x,y), la largeur et la hauteur.-->
+<!--Si vous modifiez manuellement cette section et commettez une erreur, vous pouvez la supprimer. -->
+<!--Le package pourra toujours se charger normalement, mais les informations de disposition précédente seront perdues et le concepteur réorganisera automatiquement les éléments sur l'aire de conception.-->
+<Objects
+  Version="8">
+  <!--Chaque nœud ci-dessous contiendra des propriétés qui n'affectent pas le comportement d'exécution.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="120.8,41.6"
+          Id="Package\Flux date"
+          TopLeft="294.166650594109,28.5999998011192" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Flux date">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="176,41.6"
+          Id="Package\Flux date\Source du fichier plat"
+          TopLeft="107.999998390675,107.999998390675" />
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\Flux date\Destination ADO NET"
+          TopLeft="417.999993771315,112.999998316169" />
+        <EdgeLayout
+          Id="Package\Flux date.Paths[Sortie de source de fichier plat]"
+          TopLeft="283.999998390675,131.299998353422">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="133.99999538064,0"
+              Start="0,0"
+              End="126.49999538064,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="126.49999538064,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Flux date\Destination ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
