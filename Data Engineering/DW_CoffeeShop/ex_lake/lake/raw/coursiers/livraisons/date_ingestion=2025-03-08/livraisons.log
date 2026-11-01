@@ -1,0 +1,7 @@
+2025-03-01 12:41:05 | INFO | commande=2 | livreur=Sami | statut=LIVREE | duree=22min
+2025-03-03 13:15:40 | WARN | commande=5 | livreur=Ines | statut=RETARD | duree=48min
+2025-03-04 20:02:11 | WARN | commande=7 | livreur=Sami | statut=RETARD | duree=55min
+2025-03-05 12:30:59 | INFO | commande=10 | livreur=Ines | statut=LIVREE | duree=19min
+2025-03-07 19:47:23 | ERROR | commande=13 | livreur=Walid | statut=ANNULEE | duree=0min
+2025-03-09 12:10:02 | INFO | commande=17 | livreur=Walid | statut=LIVREE | duree=25min
+2025-03-09 13:05:47 | INFO | commande=19 | livreur=Sami | statut=LIVREE | duree=31min

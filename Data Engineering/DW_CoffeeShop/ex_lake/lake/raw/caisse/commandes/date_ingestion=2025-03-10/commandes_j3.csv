@@ -1,0 +1,3 @@
+commande_id,date_commande,client_id,produit_id,quantite,montant,canal,pourboire
+20,2025-03-10,1,3,2,25.000,sur place,3.000
+21,2025-03-10,4,2,1,5.000,livraison,2.000

@@ -1,0 +1,2 @@
+commande_id,date_commande,client_id,produit_id,quantite,montant,canal
+20,2025-03-10,3,1,deux,douze dinars,sur place
