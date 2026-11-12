@@ -26,27 +26,27 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">ORCA</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHEJh4Wwx6UKCR7n/bKh2nwAAAAACAAAAAAAQZgAAAAEAACAAAADfboRx5vD9zbZZA0jCvZNA3xXURrf5GVhwZ6dr9CAuZgAAAAAOgAAAAAIAACAAAADMWh9eFhjnH7R5D2eggdBPE2jlbh9tHCY5O96j7DJy85AAAACDTTaB5BHaZJBQt0Tu6ZUFKh5nbmOtk7Btsjl6vtVvjy9w/xae5jMB9c7mG8WibdGLHhKUb+7/HVNW/0l8cmAtd4MUbG+nI2Heo7LdvjAatGEW4GEnzfoSrRSfEsGKWcZaZvlW8dJZEjlu/A5Qu+oXhTE3oQQqN7xnLohiH+SJreiQTnILp6ZusWBmAGTLz+RAAAAAO0YRTawub+FEt5E8Juf7cN6CVcV3dhncoVKK6z606hYpbfvTRnS7YgTcSOIxsnOzGUdCWFkMah5PVZRTGrE8jw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHEJh4Wwx6UKCR7n/bKh2nwAAAAACAAAAAAAQZgAAAAEAACAAAAAPjcg5LeypXhAS00GQTxzn1uwCrL9napU/fGiJ217RLgAAAAAOgAAAAAIAACAAAADjwSW3s2TCjPbQ+rqN5BE5SYgGHtrpPs9n5ujkdxsSUpAAAADqew3DcbbiHsInNIFwlrS/yuRONpOfJHOzAWEsZp6KDsmGUVVdYk+MGWbhOf4bb8rQTGDkcc7+fwi/O4kPMYxV0+KmqbcIVqBNaYFJQ4+nP9HlQWviJLTDEd+HdlJolu9gC8YtXz7cD45JbEfmMlfK7syNZz8ViMJi5bUMwmv9osJl0PhkR7Z+dzyg0Z1qgeJAAAAAdi2Sgr9915DDUWlMgJH1Zky0YjmNF20lp/rW/wN4FS9yAMg9sP6p3nxil0JlFjpSKZPY1c6jBu6L6dAzhlCGag==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Package1.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Package_Default.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Package_Staging.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Package.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Package_Default.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{15B03068-5ABA-45F5-9BF7-A3EF2AF66EC9}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{E54F6A0F-9053-4B8C-8BC7-32559C5F2CAC}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package_Default</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">23</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">24</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{62782287-EC50-490C-B624-DB7FE1515B6B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{4417327F-C214-4040-96B4-04A22756AD5E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1513,7 +1513,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=ORCA\SQLEXPRESS;Initial Catalog=DW_VENTES;Integrated Security=True;Encrypt=False;Application Name=SSIS-Package-{9E7B4BDF-55C6-4A1E-9089-239B0F2DE7C1}ORCA\SQLEXPRESS.DW_VENTES;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=ORCA\SQLEXPRESS;Initial Catalog=DW_VENTES;Integrated Security=True;Encrypt=False;Application Name=SSIS-Package-{8CF687D1-E769-4592-8527-30F48C4C9C6D}ORCA\SQLEXPRESS.DW_VENTES;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1607,16 +1607,16 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Package1.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Package_Staging.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{01A13ADA-0264-4612-9A4E-2BD31CFF8497}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{86F9CA23-7277-4507-9844-E189C7DDD5F0}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package_Staging</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">30</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">34</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{DB79D477-F8D2-4FC4-A3D9-9B5D33C94001}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{BE420ECB-D600-4A8A-9D9F-A0625CA077C3}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -3623,7 +3623,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=ORCA\SQLEXPRESS;Initial Catalog=ProjetVente_SA;Integrated Security=True;Encrypt=False;Application Name=SSIS-Package1-{ACD0122A-ED9F-4314-966E-4B85F03438C3}ORCA\SQLEXPRESS.ProjetVente_SA;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=ORCA\SQLEXPRESS;Initial Catalog=ProjetVente_SA;Integrated Security=True;Encrypt=False;Application Name=SSIS-Package1-{22A9B047-C536-4EBE-A6B5-9A781CC961F2}ORCA\SQLEXPRESS.ProjetVente_SA;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
