@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package_Staging"
   DTS:PackageType="5"
-  DTS:VersionBuild="34"
-  DTS:VersionGUID="{BE420ECB-D600-4A8A-9D9F-A0625CA077C3}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{3938B773-6CCE-46F7-AF87-9C890D30804A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -546,6 +546,15 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{D49DCB0E-4BB7-4290-8F81-F64621353C22}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileName">
+      <DTS:VariableValue
+        DTS:DataType="8">D001</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{51A72CCB-9AD9-4DB0-99E9-0CECABDE158F}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
@@ -574,7 +583,7 @@
             <FEFEProperty
               FileSpec="D*.xlsx" />
             <FEFEProperty
-              FileNameRetrievalType="0" />
+              FileNameRetrievalType="2" />
             <FEFEProperty
               Recurse="0" />
           </ForEachFileEnumeratorProperties>
@@ -633,13 +642,13 @@
                               containsID="true"
                               dataType="System.String"
                               description="Expression de colonne dérivée"
-                              name="Expression">[LEFT]([RIGHT](@[User::path],9),4)</property>
+                              name="Expression">@[User::FileName]</property>
                             <property
                               containsID="true"
                               dataType="System.String"
                               description="Expression claire de colonne dérivée"
                               expressionType="Notify"
-                              name="FriendlyExpression">LEFT(RIGHT(@[User::path],9),4)</property>
+                              name="FriendlyExpression">@[User::FileName]</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -1213,10 +1222,16 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{2AC1E530-EC43-4BFA-9F8B-51C4E0EB50F5}"
-          DTS:ObjectName="{2AC1E530-EC43-4BFA-9F8B-51C4E0EB50F5}"
+          DTS:DTSID="{C1D1E871-812F-42A8-9F36-3EDA550C0B60}"
+          DTS:ObjectName="{C1D1E871-812F-42A8-9F36-3EDA550C0B60}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::path" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{591A14E1-BDCF-4ABA-85D0-25B1E277AEC8}"
+          DTS:ObjectName="{591A14E1-BDCF-4ABA-85D0-25B1E277AEC8}"
+          DTS:ValueIndex="1"
+          DTS:VariableName="User::FileName" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
     <DTS:Executable
@@ -6202,9 +6217,9 @@
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="204.8,105.6"
-          Size="204.8,148.8"
+          Size="244.8,148.8"
           Id="Package\Conteneur de boucles Foreach"
-          TopLeft="736.666626416976,236.133333031999" />
+          TopLeft="596.666634066238,195.39999998192" />
         <NodeLayout
           Size="134.4,41.6"
           Id="Package\Tâche client"
@@ -6244,37 +6259,37 @@
         <NodeLayout
           Size="179.2,41.6"
           Id="Package\Conteneur de boucles Foreach\Tâche facture v2\Destination ADO NET"
-          TopLeft="886.499986872077,90.0304337842309" />
+          TopLeft="555.499991804361,56.0304342908704" />
         <NodeLayout
           Size="154.4,41.6"
           Id="Package\Conteneur de boucles Foreach\Tâche facture v2\Colonne dérivée"
-          TopLeft="637.999990493059,215.999996781349" />
+          TopLeft="375.999994397163,217.999996751547" />
         <EdgeLayout
           Id="Package\Conteneur de boucles Foreach\Tâche facture v2.Paths[Sortie de colonne dérivée]"
-          TopLeft="739.599990493059,215.999996781349">
+          TopLeft="477.599994397163,217.999996751547">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="236.499996379018,-84.3695629971184"
+              EndConnector="167.499997407198,-120.369562460676"
               Start="0,0"
-              End="236.499996379018,-76.8695629971184">
+              End="167.499997407198,-112.869562460676">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-30.2670225095989" />
+                    End="0,-44.8885607532593" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-30.2670225095989"
-                    Point2="0,-34.2670225095989"
-                    Point3="4,-34.2670225095989" />
+                    Point1="0,-44.8885607532593"
+                    Point2="0,-48.8885607532593"
+                    Point3="4,-48.8885607532593" />
                   <mssgle:LineSegment
-                    End="232.499996379018,-34.2670225095989" />
+                    End="163.499997407198,-48.8885607532593" />
                   <mssgle:CubicBezierSegment
-                    Point1="232.499996379018,-34.2670225095989"
-                    Point2="236.499996379018,-34.2670225095989"
-                    Point3="236.499996379018,-38.2670225095989" />
+                    Point1="163.499997407198,-48.8885607532593"
+                    Point2="167.499997407198,-48.8885607532593"
+                    Point3="167.499997407198,-52.8885607532593" />
                   <mssgle:LineSegment
-                    End="236.499996379018,-76.8695629971184" />
+                    End="167.499997407198,-112.869562460676" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6289,26 +6304,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="550.19999190867,121.399997571111"
+              EndConnector="263.799995812774,123.399997541308"
               Start="0,0"
-              End="550.19999190867,113.899997571111">
+              End="263.799995812774,115.899997541308">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,56.6999987855554" />
+                    End="0,69.2806139245307" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,56.6999987855554"
-                    Point2="0,60.6999987855554"
-                    Point3="4,60.6999987855554" />
+                    Point1="0,69.2806139245307"
+                    Point2="0,73.2806139245307"
+                    Point3="4,73.2806139245307" />
                   <mssgle:LineSegment
-                    End="546.19999190867,60.6999987855554" />
+                    End="259.799995812774,73.2806139245307" />
                   <mssgle:CubicBezierSegment
-                    Point1="546.19999190867,60.6999987855554"
-                    Point2="550.19999190867,60.6999987855554"
-                    Point3="550.19999190867,64.6999987855554" />
+                    Point1="259.799995812774,73.2806139245307"
+                    Point2="263.799995812774,73.2806139245307"
+                    Point3="263.799995812774,77.2806139245307" />
                   <mssgle:LineSegment
-                    End="550.19999190867,113.899997571111" />
+                    End="263.799995812774,115.899997541308" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6320,6 +6335,19 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Conteneur de boucles Foreach\Tâche facture v2\Source Excel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Conteneur de boucles Foreach\Tâche facture v2\Destination ADO NET">
     <Properties>
@@ -6378,7 +6406,7 @@
     design-time-name="Package\Tâche facture">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="148,41.6"
           Id="Package\Tâche facture\Source Excel 4"
@@ -6438,9 +6466,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6474,9 +6500,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6498,9 +6522,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6534,9 +6556,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6570,9 +6590,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6606,9 +6624,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6749,7 +6765,7 @@
     design-time-name="Package\Tâche produit">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="140,41.6"
           Id="Package\Tâche produit\Source Excel"
@@ -6789,9 +6805,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6822,7 +6836,7 @@
     design-time-name="Package\Tâche site">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="179.2,41.6"
           Id="Package\Tâche site\Destination ADO NET"
@@ -6862,9 +6876,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6882,7 +6894,7 @@
     design-time-name="Package\Tâche sousfamille">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="176,41.6"
           Id="Package\Tâche sousfamille\Source du fichier plat"
@@ -6922,9 +6934,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

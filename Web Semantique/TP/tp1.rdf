@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.exemple.tn/tp1#"
+     xml:base="http://www.exemple.tn/tp1"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.exemple.tn/tp1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.exemple.tn/tp1#aPourSujet -->
+
+    <owl:ObjectProperty rdf:about="http://www.exemple.tn/tp1#aPourSujet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.exemple.tn/tp1#Livre"/>
+        <rdfs:range rdf:resource="http://www.exemple.tn/tp1#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#auteur -->
+
+    <owl:ObjectProperty rdf:about="http://www.exemple.tn/tp1#auteur">
+        <rdfs:subPropertyOf rdf:resource="http://www.exemple.tn/tp1#compositeur"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.exemple.tn/tp1#Morceau"/>
+        <rdfs:range rdf:resource="http://www.exemple.tn/tp1#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#compositeur -->
+
+    <owl:ObjectProperty rdf:about="http://www.exemple.tn/tp1#compositeur">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.exemple.tn/tp1#Morceau"/>
+        <rdfs:range rdf:resource="http://www.exemple.tn/tp1#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#ecritPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.exemple.tn/tp1#ecritPar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.exemple.tn/tp1#Livre"/>
+        <rdfs:range rdf:resource="http://www.exemple.tn/tp1#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.exemple.tn/tp1#Ecrivain -->
+
+    <owl:Class rdf:about="http://www.exemple.tn/tp1#Ecrivain">
+        <rdfs:subClassOf rdf:resource="http://www.exemple.tn/tp1#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#Homme -->
+
+    <owl:Class rdf:about="http://www.exemple.tn/tp1#Homme">
+        <rdfs:subClassOf rdf:resource="http://www.exemple.tn/tp1#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#Livre -->
+
+    <owl:Class rdf:about="http://www.exemple.tn/tp1#Livre"/>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#Morceau -->
+
+    <owl:Class rdf:about="http://www.exemple.tn/tp1#Morceau"/>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#PageWeb -->
+
+    <owl:Class rdf:about="http://www.exemple.tn/tp1#PageWeb"/>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#Personne -->
+
+    <owl:Class rdf:about="http://www.exemple.tn/tp1#Personne"/>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#Sport -->
+
+    <owl:Class rdf:about="http://www.exemple.tn/tp1#Sport"/>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#Tennis -->
+
+    <owl:Class rdf:about="http://www.exemple.tn/tp1#Tennis">
+        <rdfs:subClassOf rdf:resource="http://www.exemple.tn/tp1#Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.exemple.tn/tp1#AutreMorceau -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemple.tn/tp1#AutreMorceau">
+        <auteur rdf:resource="http://www.exemple.tn/tp1#Mozart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#BiographieKateb -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemple.tn/tp1#BiographieKateb">
+        <aPourSujet rdf:resource="http://www.exemple.tn/tp1#KatebYacine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#EineKleine -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemple.tn/tp1#EineKleine">
+        <compositeur rdf:resource="http://www.exemple.tn/tp1#Mozart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#KatebYacine -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemple.tn/tp1#KatebYacine">
+        <rdf:type rdf:resource="http://www.exemple.tn/tp1#Ecrivain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#Mozart -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemple.tn/tp1#Mozart"/>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#Nedjma -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemple.tn/tp1#Nedjma">
+        <ecritPar rdf:resource="http://www.exemple.tn/tp1#KatebYacine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#RadioTV_NewsML -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemple.tn/tp1#RadioTV_NewsML">
+        <rdf:type rdf:resource="http://www.exemple.tn/tp1#PageWeb"/>
+        <dc:creator>M. Onishi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2002-02-21T00:00:00</dc:date>
+        <dc:format>application/pdf</dc:format>
+        <dc:title>RadioTV-NewsML in Japan</dc:title>
+        <dc:type>Text</dc:type>
+        <rdfs:comment>Article sur la RadioTVNewsML au Japon</rdfs:comment>
+        <rdfs:label>Article RadioTV-NewsML</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.exemple.tn/tp1#Socrate -->
+
+    <owl:NamedIndividual rdf:about="http://www.exemple.tn/tp1#Socrate">
+        <rdf:type rdf:resource="http://www.exemple.tn/tp1#Homme"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -2,18 +2,23 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>IS_Ventes</Name>
-    <LastWriteTime>2026-11-12T14:17:34.5477883Z</LastWriteTime>
+    <LastWriteTime>2026-11-13T09:13:23.4539229Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Package_Default.dtsx</Name>
-      <LastWriteTime>2026-11-12T14:17:34.3539077Z</LastWriteTime>
+      <LastWriteTime>2026-11-13T19:28:36.9674256Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Package_Staging.dtsx</Name>
-      <LastWriteTime>2026-11-12T18:45:21.1862966Z</LastWriteTime>
+      <LastWriteTime>2026-11-13T19:53:23.1956449Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Package_Final.dtsx</Name>
+      <LastWriteTime>2026-11-13T19:07:12.0299834Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
